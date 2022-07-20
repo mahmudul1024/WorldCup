@@ -81,7 +81,6 @@ border-radius: 10px;
 
 
  
- 
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -94,20 +93,27 @@ border-radius: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    padding: 10px;
 }
 .fixed_btn{
     
     
-    margin: 5px 0px;
+    /* margin: 5px 10px; */
     font-size: 1.1rem;
-    padding: 2% 20%;
-    border: 1px solid grey;
+    width: 100%;
+    padding: 5%;
+    margin: 2% 5%;
+    background-color: white;
+    margin-bottom: 20px;
     
     border-radius: 10px;
     
 }
 .fixed_child button:hover{
-    background-color:red;}
+    background-color:rgb(242, 74, 74);
+}
+
 
 /* .....................................................
         BoX right container
@@ -122,19 +128,23 @@ border-radius: 10px;
     width: 80%;
     margin-left: 10px;
     border-radius: 10px;
-    border: 1px solid #000;
+   
 }
 .box{
-    border: 1px solid rgba(211, 210, 210, 0.368);
+    border: 2px solid rgba(211, 210, 210, 0.368);
     border-radius: 10px;
+    
 }
 
 .img_blog{
     width: 100%;
 }
-
+.text_blog{
+    text-align: center;
+}
 .description{
     margin: 5%;
+    
 }
 
 .p_transfer{
@@ -191,6 +201,7 @@ a{
     justify-content: center;
     align-items: center;
     margin-bottom: 1%;
+    flex-wrap: wrap;
 
     
 
@@ -227,6 +238,15 @@ a{
  
     
 }
+
+.flags_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+
+}
 .flags_grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -237,5 +257,166 @@ a{
 
 .flags_heading{
     text-align: center;
+}
+
+
+
+/* testing delete after  */
+
+
+
+/* .....................................................
+    @media for tab view (max-width :782px)
+........................................................ */
+
+@media screen and (min-width:501px) and (max-width :811px) {
+
+    .box_right{
+        grid-template-columns: repeat(2,1fr);
+    
+        }
+
+
+        .Box_container{
+            flex-direction: column;
+
+        }
+
+        .fixed_left_container{
+            background-color: white;
+            /* left:auto; */
+            height: 20px;
+            width: 85%;
+            /* margin-bottom: 10px; */
+            margin: 0 auto;
+
+        }
+
+        .fixed_child{
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50%;
+            width: 100%;
+            /* margin-right: 100px; */
+
+        }
+    
+
+        .fixed_btn{
+    
+            font-size: 10px;
+            padding: 2% 4%;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(253, 249, 249);
+            color: white;
+            width: 100%;
+         border-radius: 10px;
+            
+        }
+
+
+        .box_right{
+            width: 100%;
+        }
+
+
+}
+
+
+/* .....................................................
+    @media for mobile view (max-width :200px)
+........................................................ */
+
+@media screen  and (min-width:200px) and (max-width:500px){
+
+.Header_container{
+    flex-direction: column;
+    
+    margin-bottom: 50px;
+
+}
+.header_right img{
+width: 100%;
+}
+.Header_container:hover .header_right img{
+    
+    transform: translate(10px) scale(1.2);
+    transition: transform 3s ease-out .3s;
+    /* border-right: 1px solid #000; */
+ 
+}
+
+    .box_right{
+        grid-template-columns: repeat(1,1fr);
+    
+        }
+
+
+        .Box_container{
+            flex-direction: column;
+
+        }
+
+        .fixed_left_container{
+            background-color: white;
+            width: 100%;
+            /* margin-bottom: 10px; */
+            margin: 0 auto;
+            /* border: 1px solid #000; */
+            height: 100px;
+            margin-bottom: 50px;
+            border-radius: 0;
+
+
+        }
+
+        .fixed_child{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 90%;
+            /* margin-right: 100px; */
+            /* border: 5px solid rgb(233, 25, 25); */
+            
+
+        }
+    
+
+        .fixed_btn{
+    
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            width: 50%;
+         border-radius: 10px;
+         border: 3px solid rgba(128, 128, 128, 0.066);
+         margin-top: 0;
+         margin-bottom: 5px;
+
+
+
+
+            
+        }
+
+        .fixed_btn a{
+            /* border: 3px solid #000; */
+            width: 100%;
+            color: #000;
+        }
+
+
+        .box_right{
+            width: 100%;
+        }
+
+
+}
+
+
+    
 }
 
