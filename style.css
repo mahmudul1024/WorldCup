@@ -1,0 +1,419 @@
+
+body{
+    margin: 0;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+.body_inside{
+    font-family: 'Oswald', sans-serif;
+    
+    padding: 50px;
+
+}
+
+
+
+/* .....................................................
+        Header_container
+........................................................ */
+
+.Header_container{
+    padding: 5%;
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+
+
+}
+
+.Header_container:hover .header_right img{
+    
+       transform: translate(100px) scale(1.2);
+       transition: transform 3s ease-out .3s;
+    
+    
+}
+
+.header_left{
+    width: 50%;
+
+}
+
+.header_right{
+    width: 50%;
+}
+
+.watch_btn{
+    font-size: 1.1rem;
+    padding: 2% 4%;
+    background-color: red;
+    color: white;
+border-radius: 10px;
+}
+
+
+/* .....................................................
+        Boxlist_container
+........................................................ */
+
+.Box_container{
+    display: flex;
+
+    width: 100%;
+
+
+}
+
+/* .....................................................
+        BoX fixed or left container
+........................................................ */
+.fixed_left_container{
+width: 20%;
+height: 200px;
+background-color: black;
+padding: 20px;
+border-radius: 10px;
+
+
+ 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+
+}
+
+
+.fixed_child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+}
+.fixed_btn{
+    
+    
+    /* margin: 5px 10px; */
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 5%;
+    margin: 2% 5%;
+    background-color: white;
+    margin-bottom: 20px;
+    
+    border-radius: 10px;
+    
+}
+.fixed_child button:hover{
+    background-color:rgb(242, 74, 74);
+}
+
+
+/* .....................................................
+        BoX right container
+........................................................ */
+
+
+.box_right{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px ;
+    width: 80%;
+    margin-left: 10px;
+    border-radius: 10px;
+   
+}
+.box{
+    border: 2px solid rgba(211, 210, 210, 0.368);
+    border-radius: 10px;
+    
+}
+
+.img_blog{
+    width: 100%;
+}
+.text_blog{
+    text-align: center;
+}
+.description{
+    margin: 5%;
+    
+}
+
+.p_transfer{
+    font-weight: bold;
+}
+.transfer_btn{
+    font-size: 1.1rem;
+    padding: 2% 4%;
+    border: 1px solid grey;
+    
+    border-radius: 10px;
+
+}
+
+.icon_parent{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.fa-clock ,.fa-comment-dots{
+    color: grey;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    
+}
+.marg_p{
+    margin-right: 25%;
+}
+a{
+    text-decoration: none;
+}
+
+/* .....................................................
+       Footer container
+........................................................ */
+
+
+.foot{
+    width: 100%;
+    
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    
+
+}
+
+
+.ending_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+
+    
+
+    
+}
+
+
+.ending_desc a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+
+
+}
+.icon_container{
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0 25%;
+
+    
+
+}
+
+/* .....................................................
+       second html container
+........................................................ */
+.flag_box{
+    /* margin: 20% 5px; */
+    border: 5px solid rgba(211, 210, 210, 0.368);
+    
+    border-radius: 10px;
+ 
+    
+}
+
+.flags_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+
+}
+.flags_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    border: 5px solid rgb(52, 237, 10);
+    
+}
+
+.flags_heading{
+    text-align: center;
+}
+
+
+
+
+
+
+/* .....................................................
+    @media for tab view (max-width :782px)
+........................................................ */
+
+@media only screen and (min-device-width:501px) and (max-device-width :820px) {
+
+    .box_right{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        }
+
+
+        .Box_container{
+            flex-direction: column;
+
+        }
+
+        .fixed_left_container{
+            background-color: white;
+            /* left:auto; */
+            height: 20px;
+            width: 85%;
+            margin: 0 auto;
+
+        }
+
+        .fixed_child{
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50%;
+            width: 100%;
+
+        }
+    
+
+        .fixed_btn{
+    
+            font-size: 10px;
+            padding: 2% 4%;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(253, 249, 249);
+            color: white;
+            width: 100%;
+         border-radius: 10px;
+            
+        }
+
+
+        
+
+
+}
+
+
+/* .....................................................
+    @media for mobile view (max-width :200px)
+........................................................ */
+
+@media only screen   and (min-device-width:200px) and (max-device-width:500px){
+
+.Header_container{
+    flex-direction: column;
+    
+    margin-bottom: 100px;
+
+}
+.header_right img{
+width: 100%;
+}
+.Header_container:hover .header_right img{
+    
+    transform: translate(10px) scale(1.2);
+    transition: transform 3s ease-out .3s;
+    /* border-right: 1px solid #000; */
+ 
+}
+
+    .box_right{
+        grid-template-columns: repeat(1,1fr);
+    
+        }
+
+
+        .Box_container{
+            flex-direction: column;
+
+        }
+
+        .fixed_left_container{
+            background-color: white;
+            width: 100%;
+            margin: 0 auto;
+            height: 260px;
+            margin-bottom: 50px;
+            border-radius: 0;
+
+
+        }
+        
+
+        .fixed_child{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 90%;
+            /* margin-right: 100px; */
+            /* border: 5px solid rgb(233, 25, 25); */
+            
+
+        }
+    
+
+        .fixed_btn{
+    
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            width: 50%;
+         border-radius: 10px;
+         border: 3px solid rgba(128, 128, 128, 0.066);
+         margin-top: 0;
+         margin-bottom: 5px;
+
+
+
+
+            
+        }
+
+        .fixed_btn a{
+            /* border: 3px solid #000; */
+            width: 100%;
+            color: #000;
+            font-size: 30px;
+        }
+
+
+        .box_right{
+            width: 100%;
+            margin-top: 50px;
+
+        }
+
+
+}
+
+
+    
+
+
