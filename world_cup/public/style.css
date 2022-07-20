@@ -1,0 +1,154 @@
+
+body{
+    margin: 20px 5%;
+    border: 1px solid #000;
+
+}
+
+/* .....................................................
+        Header_container
+........................................................ */
+
+.Header_container{
+    padding: 5%;
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+
+
+}
+
+.header_left{
+    width: 50%;
+    border: 10px solid green;
+
+}
+
+.header_right{
+    width: 50%;
+    border: 10px solid green;
+}
+
+.watch_btn{
+    font-size: 1.1rem;
+    padding: 2% 4%;
+    border: 1px solid red;
+    background-color: red;
+border-radius: 10px;
+}
+
+
+/* .....................................................
+        Boxlist_container
+........................................................ */
+
+.Box_container{
+    display: flex;
+
+    width: 100%;
+    border: 10px solid pink;
+
+
+}
+
+/* .....................................................
+        BoX fixed or left container
+........................................................ */
+.fixed_left_container{
+width: 20%;
+height: 200px;
+background-color: black;
+padding: 20px;
+border-radius: 10px;
+
+
+ 
+ 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+
+}
+
+
+.fixed_child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fixed_btn{
+    
+    
+    margin: 5px 0px;
+    font-size: 1.1rem;
+    padding: 2% 20%;
+    border: 1px solid grey;
+    
+    border-radius: 10px;
+    
+}
+.fixed_child button:hover{
+    background-color:red;}
+
+/* .....................................................
+        BoX right container
+........................................................ */
+
+
+.box_right{
+   
+    border: 10px solid goldenrod;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px ;
+    width: 80%;
+    border: 1px solid red;
+    
+   
+}
+.box{
+    border: 10px solid plum;
+    
+}
+
+.img_blog{
+    width: 100%;
+border: 1px solid #000;
+}
+
+.description{
+    margin: 5%;
+}
+
+.p_transfer{
+    font-weight: bold;
+}
+.transfer_btn{
+    font-size: 1.1rem;
+    padding: 2% 4%;
+    border: 1px solid grey;
+    
+    border-radius: 10px;
+
+}
+
+.icon_parent{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.fa-clock ,.fa-comment-dots{
+    color: grey;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    
+}
+.marg_p{
+    margin-right: 25%;
+}
